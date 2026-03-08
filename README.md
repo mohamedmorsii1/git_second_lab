@@ -45,8 +45,13 @@ git stash pop
 #version and tag
 git tag -a v1.7 -m "Release version 1.7"
 git push origin v1.7
+#list tags
+git tag
+#delete tags
+git tag -d v1.7
+git push origin --delete v1.7
 
 #add image to readme
 wget -O dog.jpg https://upload.wikimedia.org/wikipedia/commons/4/43/Cute_dog.jpg
 echo '![Dog Image](dog.jpg)' >> README.md
-![Dog Image](dog.jpg)
+
