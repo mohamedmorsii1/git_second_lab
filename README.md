@@ -47,6 +47,6 @@ git tag -a v1.7 -m "Release version 1.7"
 git push origin v1.7
 
 #add image to readme
-echo '![Dog Image](https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg)' >> README.md
-
-![Dog Image](https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg)
+wget -O dog.jpg https://upload.wikimedia.org/wikipedia/commons/4/43/Cute_dog.jpg
+echo '![Dog Image](dog.jpg)' >> README.md
+![Dog Image](dog.jpg)
